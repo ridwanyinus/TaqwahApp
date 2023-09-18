@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Taqwah</title>
+      <link rel="stylesheet" href="output.css" />
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+         rel="stylesheet" />
+   </head>
+   <body class="font-[rubik]">
+      <div>
+         <header id="header" class="bg-primary-100-0 relative">
+            <div>
+               <nav
+                  class="flex justify-between items-center px-10 lg:px-16 py-2 pt-5 bg-white fixed top-0 left-0 z-10 w-full">
+                  <!--  Navbars -->
+                  <div class="shrink-0">
+                     <a href="#header">
+                        <img src="images/logo.png" alt="logo" />
+                     </a>
+                  </div>
+                  <div class="md:hidden">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 cursor-pointer"
+                        id="burger">
+                        <path
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                     </svg>
+                  </div>
+
+                  <div class="hidden md:block">
+                     <ul class="flex text-text-0 text-base leading-normal" id="menu">
+                        <li>
+                           <a href="#header" class="px-4 font-medium">Home</a>
+                        </li>
+                        <li>
+                           <a href="#main" class="px-5">About us</a>
+                        </li>
+                        <li>
+                           <a href="#" class="px-5">News</a>
+                        </li>
+                        <li>
+                           <a href="#" class="px-5">Educational</a>
+                        </li>
+                        <li>
+                           <a href="#" class="px-5">Online Store</a>
+                        </li>
+                        <li>
+                           <a href="#footer" class="px-5">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="hidden md:block">
+                     <a
+                        href="#charity"
+                        class="btn text-white bg-green-0 font-medium text-base leading-normal py-4"
+                        >Donate</a
+                     >
+                  </div>
+                  <!-- Nav end -->
+               </nav>
+
+               <section
+                  class="hero md:flex px-5 pb-10 md:pb-0 pt-20 md:pt-28 md:px-12 justify-center">
+                  <!-- hero sect -->
+                  <div class="flex md:order-2 shrink-0 md:w-[601px]">
+                     <img src="Images/hero_img.png" alt="" class="" />
+                  </div>
+
+                  <div class="py-6 flex flex-col h-fit md:order-1">
+                     <div
+                        class="flex bg-[#E7F3F0] w-fit px-2 py-2 rounded pr-10 cursor-pointer text-xs md:text-base items-center justify-center">
+                        <svg
+                           class=" "
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="24"
+                           height="24"
+                           viewBox="0 0 24 24"
+                           fill="none">
+                           <path
+                              d="M12 10.8001C12.3956 10.8001 12.7822 10.6828 13.1111 10.463C13.44 10.2433 13.6964 9.93091 13.8478 9.56545C13.9991 9.2 14.0387 8.79787 13.9616 8.40991C13.8844 8.02195 13.6939 7.66558 13.4142 7.38587C13.1345 7.10617 12.7781 6.91569 12.3902 6.83852C12.0022 6.76135 11.6001 6.80095 11.2346 6.95233C10.8692 7.1037 10.5568 7.36005 10.3371 7.68895C10.1173 8.01785 10 8.40453 10 8.80009C10 9.33052 10.2107 9.83923 10.5858 10.2143C10.9609 10.5894 11.4696 10.8001 12 10.8001ZM11.29 17.7101C11.383 17.8038 11.4936 17.8782 11.6154 17.929C11.7373 17.9797 11.868 18.0059 12 18.0059C12.132 18.0059 12.2627 17.9797 12.3846 17.929C12.5064 17.8782 12.617 17.8038 12.71 17.7101L16.8 13.6101C17.75 12.6606 18.397 11.4508 18.6593 10.1335C18.9216 8.81632 18.7873 7.45089 18.2735 6.20998C17.7597 4.96906 16.8894 3.9084 15.7727 3.16215C14.656 2.41589 13.3431 2.01758 12 2.01758C10.6569 2.01758 9.344 2.41589 8.22731 3.16215C7.11062 3.9084 6.24033 4.96906 5.72652 6.20998C5.2127 7.45089 5.07845 8.81632 5.34073 10.1335C5.60301 11.4508 6.25005 12.6606 7.2 13.6101L11.29 17.7101ZM7.23 8.34009C7.29833 7.62711 7.52502 6.93838 7.89352 6.3242C8.26203 5.71002 8.76305 5.1859 9.36 4.79009C10.1442 4.27519 11.0619 4.00085 12 4.00085C12.9381 4.00085 13.8558 4.27519 14.64 4.79009C15.233 5.18454 15.7311 5.70549 16.0987 6.31547C16.4663 6.92546 16.6942 7.60932 16.7659 8.31787C16.8376 9.02643 16.7514 9.74208 16.5135 10.4133C16.2756 11.0846 15.8919 11.6948 15.39 12.2001L12 15.5901L8.61 12.2001C8.10752 11.6997 7.72293 11.0936 7.48421 10.4259C7.24548 9.75816 7.15864 9.04561 7.23 8.34009ZM19 20.0001H5C4.73478 20.0001 4.48043 20.1054 4.29289 20.293C4.10536 20.4805 4 20.7349 4 21.0001C4 21.2653 4.10536 21.5197 4.29289 21.7072C4.48043 21.8947 4.73478 22.0001 5 22.0001H19C19.2652 22.0001 19.5196 21.8947 19.7071 21.7072C19.8946 21.5197 20 21.2653 20 21.0001C20 20.7349 19.8946 20.4805 19.7071 20.293C19.5196 20.1054 19.2652 20.0001 19 20.0001Z"
+                              fill="#1DA599" />
+                        </svg>
+                        <h4 class="ml-2">At-taqwa Masjid & Islamic Center, Kumarpara, Sylhet</h4>
+                     </div>
+                     <h1
+                        class="md:w-[601px] w-max[384px] text-4xl md:text-6xl font-bold leading-none text-text-0 py-6">
+                        A reliable Islamic Center to Follow the Qur’an & Sunnah
+                     </h1>
+                     <p class="text-lg text-[#737780] font-normal leading-normal mb-7 md:w-[503px]">
+                        The Salat is the time when the meeting with Allah and the ascension (Mi'raj)
+                        of the believer takes place.
+                     </p>
+                     <div>
+                        <a href="#" class="btn bg-[#FFC265] flex w-fit items-center"
+                           >Tour in Taqwa</a
+                        >
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </header>
+         <!-- Main -->
+         <main class="bg-[#FBFFDC] px-4 md:px-10 py-16" id="main">
+            <div class="md:flex justify-between items-start">
+               <h1 class="text-4xl text-text-0 font-bold leading-10 md:w-[464px] mb-5">
+                  At-taqwa Masjid’s Daily Prayers Time
+               </h1>
+               <p class="text-base md:text-lg text-gray-0 w-[300px] md:w-[730px]">
+                  The Salat is the time when the meeting with Allah and the ascension (Mi'raj) of
+                  the believer takes place. We all know the importance of this obligatory act, and
+                  thus, we do not wish to delve into that area.
+               </p>
+            </div>
+            <div class="grid gap-x-28 md:grid-cols-2 my-5 md:my-10">
+               <div class="col-span-1">
+                  <p class="md:text-2xl text-text-0 font-medium">
+                     Sunday, September 12, 2021 <span class="text-green-0">(03 Safar 1443)</span>
+                  </p>
+                  <div
+                     class="rounded-md border-grayborder-0 border py-4 px-5 bg-white text-black mb-8 my-4">
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-[#FFC265] py-4 px-4 rounded-md">
+                        <p>
+                           <span><img src="Images/sun 1.png" alt="sun" class="inline pr-2" /></span
+                           >Sun Rise
+                        </p>
+                        <p>5:38 AM</p>
+                     </div>
+                  </div>
+                  <div class="rounded-md border-grayborder-0 border py-4 px-5 bg-white my-4">
+                     <div
+                        class="flex justify-between text-green-0 font-medium md:text-lg mb-2 mb:5 py-2">
+                        <p>Salah</p>
+                        <p>Begins</p>
+                        <p>Iqaamah</p>
+                     </div>
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-white py-4 px-4 rounded-md border border-grayborder-0 text-text-0">
+                        <p>
+                           <span
+                              ><img
+                                 src="Images/clock 1.png"
+                                 alt="sun"
+                                 class="inline pr-3 shrink-0" /></span
+                           >Fajr
+                        </p>
+                        <p>4:21 AM</p>
+                        <p>4:40 AM</p>
+                     </div>
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-white py-4 px-4 rounded-md border border-grayborder-0 text-text-0 my-4">
+                        <p>
+                           <span
+                              ><img
+                                 src="Images/clock 1.png"
+                                 alt="sun"
+                                 class="inline pr-3 shrink-0" /></span
+                           >Dhuhr
+                        </p>
+                        <p>11:49 AM</p>
+                        <p>1:00 PM</p>
+                     </div>
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-green-0 py-4 px-4 rounded-md border border-grayborder-0 my-4 text-white">
+                        <p>
+                           <span
+                              ><img
+                                 src="Images/clock 1.png"
+                                 alt="sun"
+                                 class="inline pr-3 shrink-0" /></span
+                           >Asr
+                        </p>
+                        <p>3:17 PM</p>
+                        <p>4:00 AM</p>
+                     </div>
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-white py-4 px-4 rounded-md border border-grayborder-0 text-text-0">
+                        <p>
+                           <span
+                              ><img
+                                 src="Images/clock 1.png"
+                                 alt="sun"
+                                 class="inline pr-3 shrink-0" /></span
+                           >Maghrib
+                        </p>
+                        <p>6:00 PM</p>
+                        <p>6:15 PM</p>
+                     </div>
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-white py-4 px-4 rounded-md border border-grayborder-0 text-text-0 my-5">
+                        <p>
+                           <span
+                              ><img
+                                 src="Images/clock 1.png"
+                                 alt="sun"
+                                 class="inline pr-3 shrink-0" /></span
+                           >Isha
+                        </p>
+                        <p>7:17 PM</p>
+                        <p>9:00 PM</p>
+                     </div>
+                  </div>
+                  <div class="rounded-md border-grayborder-0 border py-4 px-5 bg-white my-4">
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-[#0F0F41] py-4 px-4 rounded-md border border-[#0F0F41] text-white my-2">
+                        <p>
+                           <span
+                              ><img
+                                 src="Images/icon.png"
+                                 alt="sun"
+                                 class="inline pr-3 shrink-0" /></span
+                           >Sunset
+                        </p>
+                        <p>5:54 PM</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-span-1">
+                  <p class="md:text-2xl text-text-0 font-medium">
+                     Friday, Sept 5, 2021 <span class="text-green-0">(03 Safar 1443)</span>
+                  </p>
+                  <div
+                     class="rounded-md border-grayborder-0 border py-4 px-5 bg-white my-4 md:w-[510px] flex justify-center flex-col items-center text-center">
+                     <p class="text-center font-medium text-text-0 text-2xl md:w-[304px]">
+                        Khatib of the 182nd’s Jumma Khudba
+                     </p>
+                     <img src="Images/Ellipse 458.svg" alt="" class="w-[150px] inline h-[150px]" />
+                     <p class="text-text-0 font-medium text-xl md:text-2xl">
+                        Abdur Razzak Bin Yusuf
+                     </p>
+                     <p class="text-text-0 font-normal py-2">
+                        Founder of Al-Jami’ah As-Salafiyah Madrasha Dhaka, Bangladesh
+                     </p>
+                     <div
+                        class="rounded-md border-grayborder-0 border py-4 px-5 bg-white text-green-0 my-4 md:w-[430px] flex justify-center flex-col items-center text-center font-medium md:text-xl">
+                        <p>Jumma Khudba Biegin at</p>
+                        <div
+                           class="flex justify-between items-center font-medium leading-none md:text-xl bg-text-0 py-4 px-12 md:px-24 rounded-md border border-grayborder-0 text-[#FFC265] my-3">
+                           <p>12:30 PM</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div
+                     class="rounded-md border-grayborder-0 border py-4 px-5 bg-white my-4 md:w-[510px]">
+                     <div
+                        class="flex justify-between text-green-0 font-medium md:text-lg mb-2 mb:5 py-2">
+                        <p>Friday Events</p>
+                        <p>Time</p>
+                     </div>
+
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-white py-4 px-4 rounded-md border border-grayborder-0 text-text-0 my-3">
+                        <p>Live Questions</p>
+                        <p>2:00 PM</p>
+                     </div>
+                     <div
+                        class="flex justify-between items-center font-medium leading-none md:text-xl bg-white py-4 px-4 rounded-md border border-grayborder-0 text-text-0">
+                        <p>Islamic Halaqa</p>
+                        <p>7:00 PM</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+         <!-- programs -->
+         <section id="programs" class="bg-white md:my-10 md:mb-20 mb-10">
+            <div class="flex py-10 md:py-14 justify-center items-center text-center">
+               <h1 class="text-text-0 font-bold text-lg md:text-4xl md:w-[767px] w-[400px]">
+                  Different Programs of At-taqwa Masjid & Islamic Research Center
+               </h1>
+            </div>
+            <div class="grid md:grid-cols-4 md:px-10">
+               <div class="justify-center flex">
+                  <p
+                     class="bg-[#F5F9FC] py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-xl mb-4 md:text-3xl text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/news.png" alt="" class="shrink-0 pb-2" /></span>
+                     News/Blogs
+                  </p>
+               </div>
+               <div class="justify-center flex">
+                  <p
+                     class="bg-[#F5F9FC] py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-lg md:text-3xl mb-4 text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/education.png" alt="" class="shrink-0 pb-2" /></span>
+                     Education
+                  </p>
+               </div>
+               <div class="justify-center flex">
+                  <p
+                     class="bg-green-0 py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-lg md:text-3xl mb-4 text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/event74.png" alt="" class="shrink-0 pb-2" /></span>
+                     Events
+                  </p>
+               </div>
+               <div class="justify-center flex">
+                  <p
+                     class="bg-[#F5F9FC] py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-lg md:text-3xl mb-4 text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/donation74.png" alt="" class="shrink-0 pb-2" /></span>
+                     Donations
+                  </p>
+               </div>
+               <div class="justify-center flex">
+                  <p
+                     class="bg-[#F5F9FC] py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-lg md:text-3xl mb-4 text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/social74.png" alt="" class="shrink-0 pb-2" /></span>
+                     Social Services
+                  </p>
+               </div>
+               <div class="justify-center flex">
+                  <p
+                     class="bg-[#F5F9FC] py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-lg md:text-3xl mb-4 text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/organic74.png" alt="" class="shrink-0 pb-2" /></span>
+                     Organic Food
+                  </p>
+               </div>
+               <div class="justify-center flex">
+                  <p
+                     class="bg-[#F5F9FC] py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-lg md:text-3xl mb-4 text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/onlineshop74.png" alt="" class="shrink-0 pb-2" /></span>
+                     Online Shop
+                  </p>
+               </div>
+               <div class="justify-center flex">
+                  <p
+                     class="bg-[#F5F9FC] py-6 md:py-10 ease-out transition-shadow duration-150 cursor-pointer text-center rounded-lg md:text-3xl mb-4 text-2xl hover:bg-green-0 hover:text-white hover:shadow font-medium text-[#252532] justify-center flex flex-col items-center w-[250px]">
+                     <span><img src="Images/libary74.png" alt="" class="shrink-0 pb-2" /></span>
+                     Islamic Library
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         <!-- charity -->
+         <section id="charity" class="bg-[#F5F9FC] py-20">
+            <div class="flex justify-center items-center">
+               <h1 class="text-text-0 font-bold text-4xl md:w-[673px] text-center mb-10">
+                  Extend Your Hand of Charity. Earn Rewards for the Hereafter
+               </h1>
+            </div>
+
+            <div
+               class="md:flex justify-around px-5 md:px-12 items-center"
+               >
+               <div
+                  class="bg-white rounded-lg w-fit mb-10 overflow-hidden h-[600px]"
+                  id="mosquedonation"
+                  >
+                  <img
+                     src="https://media.istockphoto.com/id/157192651/photo/suleymaniye-mosque-istanbul.jpg?s=612x612&w=0&k=20&c=ihU05PITcKq73rmpyGMAqX6Gg9Lr2y6YZH6TyeyFYXw="
+                     alt=""
+                     class="overflow-hidden h-[250px] pb-3 w-full" />
+                  <p class="w-fit ml-5 mb-4 text-text-0 font-medium text-xl md:text-2xl">
+                     Rebuild Mosque Fund
+                  </p>
+                  <p class="text-[#737780] font-normal md:text-lg pr-2 md:w-[360px] ml-4 mb-10">
+                     "We humbly seek your support to help us raise funds for our mosque project,
+                     where unity and spirituality will flourish. Your contribution will make a
+                     meaningful impact on our community's future."
+                  </p>
+                  <button
+                     class="text-green-0 border border-green-0 rounded-lg py-2 px-4 font-medium md:text-lg ml-4 mb-12 cursor-pointer hover:bg-green-0 hover:text-white transition-shadow duration-500 ease-in-out">
+                     Donate for Mosque
+                  </button>
+               </div>
+
+               <div
+                  class="bg-white rounded-lg w-fit mb-10 overflow-hidden h-[600px]"
+                  >
+                  <img
+                     src="https://media.istockphoto.com/id/1500458777/photo/hands-are-holding-a-pile-of-grain-to-zakat-the-islamic-zakat-concept-muslims-to-help-the-poor.jpg?s=612x612&w=0&k=20&c=YW5dQOGUoNU51vOJn72SUuWWKcU7854zSUjusHh2n8w="
+                     alt=""
+                     class="w-full h-[250px] pb-3" />
+                  <p class="ml-5 mb-4 text-text-0 font-medium text-xl md:text-2xl">Zakat Fund</p>
+                  <p class="text-[#737780] font-normal md:text-lg md:w-[360px] ml-4 mb-10 pr-2">
+                     We humbly seek your support to aid those in need through zakat donations, where
+                     compassion and assistance will thrive. Your generosity will transform lives for
+                     a better future
+                  </p>
+                  <button
+                     class="text-green-0 border border-green-0 rounded-lg py-2 px-4 font-medium md:text-lg ml-4 cursor-pointer hover:bg-green-0 hover:text-white transition-shadow duration-500 ease-in-out mb-10">
+                     Donate for Zakat
+                  </button>
+               </div>
+
+               <div
+                  class="bg-white rounded-lg w-fit mb-10 overflow-hidden h-[600px]"
+                  >
+                  <img src="Images/bg-2.png" alt="" class="h-[250px] w-full pb-3" />
+                  <p class="ml-5 mb-4 text-text-0 font-medium text-xl md:text-2xl">
+                     Sadaqah Jariyah Fund
+                  </p>
+                  <p class="text-[#737780] font-normal md:text-lg md:w-[360px] ml-4 mb-10 pr-3">
+                     Sadaqah Jariyah is ongoing charity (continuous rewards) received by us (for
+                     good actions and deeds), that will not only benefit us in this life but will
+                     continue to benefit us after our death.
+                  </p>
+                  <button
+                     class="text-green-0 border border-green-0 rounded-lg py-2 px-4 font-medium md:text-lg ml-4 cursor-pointer hover:bg-green-0 hover:text-white transition-shadow duration-500 ease-in-out mb-10">
+                     Donate for Sadaqah
+                  </button>
+               </div>
+            </div>
+            <div class="flex justify-center items-center">
+               <svg
+                  class="cursor-pointer"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="14"
+                  viewBox="0 0 72 14"
+                  fill="none">
+                  <circle cx="7" cy="7" r="7" fill="#1DA599" fill-opacity="0.5" />
+                  <circle cx="36" cy="7" r="7" fill="#1DA599" />
+                  <circle cx="65" cy="7" r="7" fill="#1DA599" fill-opacity="0.5" />
+               </svg>
+            </div>
+         </section>
+
+         <!-- Events -->
+         <section id="events" class="bg-white px-6 md:px-20 md:py-36 py-12">
+            <div class="flex justify-between mb-6 md:mb-16">
+               <h4 class="text-text-0 font-bold text-xl md:text-4xl">Upcoming Events</h4>
+               <button
+                  class="bg-green-0 rounded-full text-xs md:text-base md:py-2 px-2 text-white font-medium text-center md:px-4">
+                  Show All
+               </button>
+            </div>
+            <div class="md:flex gap-10">
+               <div class="mb-6 bg-white rounded-lg border-grayborder-0 border w-fit p-4">
+                  <div class="bg-white rounded-md md:flex gap-6">
+                     <img src="Images/arabsvg.svg" alt="" class="w-150px mb-4" />
+                     <div>
+                        <p class="font-medium text-text-0 text-xl md:w-[249px] mb-4">
+                           Marrige Preparation | D. Manjure Ilahi.
+                        </p>
+                        <p class="font-normal text-base text-[#737780] mb-8">
+                           18 September 2021 | 7:00 PM
+                        </p>
+                        <p class="text-[#737780] font-normal text-base md:w-[250px] mb-8">
+                           A commonly accepted and encompassing definition of marriage is the
+                           following: a formal union a
+                           <a href="" class="text-green-0 border-b border-green-0">Show Details</a>
+                        </p>
+                        <button class="text-text-0 text-base bg-[#FFC265] rounded-lg py-2 px-4">
+                           Register Now
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+               <div>
+                  <div
+                     class="flex gap-4 bg-white rounded-lg border-grayborder-0 border md:w-[400px] p-4">
+                     <div class="bg-[#F4F4F5] rounded-lg py-2 px-2 flex flex-col justify-center">
+                        <p class="font-medium text-text-0 text-base md:text-xl">Sept 18</p>
+                        <p class="font-normal text-text-0 text-sm">Sat</p>
+                     </div>
+                     <div>
+                        <p class="font-medium text-text-0 md:text-2xl">Marrige Preparation</p>
+                        <p class="font-normal text-[#737780] text-base">
+                           D. Manjure Ilahi | 7:00 PM
+                        </p>
+                     </div>
+                  </div>
+
+                  <div
+                     class="flex gap-4 bg-green-0 rounded-lg border-grayborder-0 border md:w-[400px] p-4 py-6 mt-7 items-start">
+                     <div
+                        class="bg-[#F5F9FC] rounded-lg py-1 px-2 flex flex-col justify-center h-fit">
+                        <p class="font-medium text-text-0 text-base md:text-xl flex">Sept 21</p>
+                        <p class="font-normal text-text-0 text-sm">Tue</p>
+                     </div>
+                     <div>
+                        <p class="font-medium text-white md:text-2xl">Islamic Halaqah</p>
+                        <p class="font-normal text-white text-base">Abudllah | 8:00 PM</p>
+                        <a
+                           href="#"
+                           class="text-white font-medium text-sm md:text-lg border-b border-white"
+                           >Show Details</a
+                        >
+                     </div>
+                  </div>
+
+                  <div
+                     class="flex gap-4 bg-white rounded-lg border-grayborder-0 border md:w-[400px] p-4 mt-6">
+                     <div class="bg-[#F4F4F5] rounded-lg py-2 px-2 flex flex-col justify-center">
+                        <p class="font-medium text-text-0 text-base md:text-xl">Sept 22</p>
+                        <p class="font-normal text-text-0 text-sm">Wed</p>
+                     </div>
+                     <div>
+                        <p class="font-medium text-text-0 md:text-2xl">Marrige Preparation</p>
+                        <p class="font-normal text-[#737780] text-base">D. Manjure | 7:00 PM</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Media -->
+         <section id="media" class="bg-[#F5F9FC] py-16 px-12">
+            <div class="flex justify-center mb-8 md:mb-16">
+               <h2 class="text-text-0 text-xl md:text-4xl font-bold text-center md:w-[815px]">
+                  Media & Community of At-taqwa Masjid & Islamic Research Center
+               </h2>
+            </div>
+
+            <div class="md:grid grid-cols-4 flex flex-col justify-center items-center">
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/counselling.png" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Counselling</p>
+                     <p class="text-[#737780] text-sm font-normal">Dawah Project</p>
+                  </div>
+               </div>
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/Divorce.svg" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Divorce</p>
+                     <p class="text-[#737780] text-sm font-normal">Separate Married Life</p>
+                  </div>
+               </div>
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/cemetry.png" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Cemetry</p>
+                     <p class="text-[#737780] text-sm font-normal">Graveyard</p>
+                  </div>
+               </div>
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""
+                     ><img src="Images/socialservive.svg" alt="Counselling-icon"
+                  /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Social Service</p>
+                     <p class="text-[#737780] text-sm font-normal">Privately Provided</p>
+                  </div>
+               </div>
+
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/religious.svg" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Religious Inquiry</p>
+                     <p class="text-[#737780] text-sm font-normal">Comparative Study</p>
+                  </div>
+               </div>
+
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/marriage.png" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-green-0 text-lg font-medium">Marriage</p>
+                     <p class="text-[#737780] text-sm font-normal">Nikkah/Katb Al Kitab</p>
+                  </div>
+               </div>
+
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/hajj.png" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Hajj</p>
+                     <p class="text-[#737780] text-sm font-normal">Hajj Process & Guidence</p>
+                  </div>
+               </div>
+
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/facilities.svg" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Facilites</p>
+                     <p class="text-[#737780] text-sm font-normal">Free Books & Others</p>
+                  </div>
+               </div>
+
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/safety.png" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Safety & Security</p>
+                     <p class="text-[#737780] text-sm font-normal">Authorized Organization</p>
+                  </div>
+               </div>
+
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/waqf.svg" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Waqf</p>
+                     <p class="text-[#737780] text-sm font-normal">Mortmain Property</p>
+                  </div>
+               </div>
+
+               <div class="bg-white rounded-lg px-6 py-8 flex w-[290px] mb-6">
+                  <span class=""><img src="Images/membership.png" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <p class="text-text-0 text-lg font-medium">Membership</p>
+                     <p class="text-[#737780] text-sm font-normal">Ummah Community</p>
+                  </div>
+               </div>
+               <div
+                  class="bg-green-0 rounded-lg px-6 items-center flex h-[114px] w-[290px] mb-6 cursor-pointer">
+                  <span class=""><img src="Images/arrow.png" alt="Counselling-icon" /></span>
+                  <div class="ml-2">
+                     <a class="text-white font-medium">More Media & Service</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- donor -->
+         <section id="donor" class="bg-white pt-20 pb-16 px-10">
+            <div>
+               <div class="md:flex justify-between p-0">
+                  <div class="h-fit">
+                     <img src="Images/image4.png" alt="" class="hidden md:block shrink-0" />
+                  </div>
+
+                  <div class="flex flex-col">
+                     <p class="text-text-0 font-bold text-4xl md:w-[665px] text-center mb-5">
+                        Be a Monthly Donation Member of Our Community
+                     </p>
+                     <p class="font-normal text-[#737780] text-lg md:w-[700px] text-center mb-4">
+                        Register for membership. You can donate monthly whatever you want. No fixed
+                        rate here. Our monthly donation starts from $5 to limitless
+                     </p>
+                  </div>
+
+                  <div class="mt-4">
+                     <img src="Images/Ellipse 462.png" alt="" class="hidden md:block shrink-0" />
+                  </div>
+               </div>
+
+               <div class="flex justify-around items-center">
+                  <div class="mb-10">
+                     <img src="Images/image3.png" alt="" class="hidden md:block" />
+                  </div>
+
+                  <div class="justify-center">
+                     <button
+                        class="bg-green-0 rounded-lg py-4 px-4 text-center text-white font-medium">
+                        Membership Registation
+                     </button>
+                  </div>
+
+                  <div>
+                     <img src="Images/image_two.png" alt="" class="hidden md:block" />
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- footer -->
+         <footer id="footer" class="bg-text-0 text-white px-12 py-12">
+            <div class="md:ml-4">
+               <img src="Images/logo.png" alt="logo" class="py-4 px-4" />
+            </div>
+
+            <div class="md:flex justify-around">
+               <div class="text-footerText-0">
+                  <p class="py-2 w-[366px] text-footerText-0 text-lg">
+                     A mosque and islamic resource center & foundation.
+                  </p>
+                  <p class="py-2 text-base cursor-pointer">
+                     <span class="pr-2"><img src="Images/call.png" alt="" class="inline" /></span
+                     >(217) 555-0113
+                  </p>
+                  <p class="py-2 text-base cursor-pointer">
+                     <span class="pr-2"
+                        ><img src="Images/message.png" alt="" class="inline"
+                     /></span>
+                     sara.cruz@example.com
+                  </p>
+                  <p class="py-2 text-base cursor-pointer">
+                     <span class="pr-2"
+                        ><img src="Images/location.png" alt="" class="inline"
+                     /></span>
+                     Kumarpara, Sylhet, Bangladesh
+                  </p>
+                  cursor-pointer
+                  <div class="flex py-8">
+                     <img src="Images/fb.png" alt="" class="pr-3 cursor-pointer" />
+                     <img src="Images/tt.png" alt="" class="pr-3 cursor-pointer" />
+                     <img src="Images/insta.png" alt="" class="pr-3 cursor-pointer" />
+                     <img src="Images/yt.png" alt="" class="pr-3 cursor-pointer" />
+                  </div>
+               </div>
+
+               <div class="text-footerText-0 text-base flex flex-col pb-4">
+                  <p class="text-white text-2xl font-medium pb-6">Quick Links</p>
+                  <a href="#header" class="py-1 md:py-2">Home</a>
+                  <a href="#main" class="py-1 md:py-2">About Us</a>
+                  <a href="#" class="py-1 md:py-2">News</a>
+                  <a href="#events" class="py-1 md:py-2">Events</a>
+                  <a href="#header" class="py-1 md:py-2">Online Store</a>
+               </div>
+
+               <div class="text-footerText-0 text-base flex flex-col pb-4">
+                  <p class="text-white text-2xl font-medium pb-4">Education</p>
+
+                  <a href="#" class="py-1 md:py-2">Hifz</a>
+                  <a href="#" class="py-1 md:py-2">Aqidah</a>
+                  <a href="#" class="py-1 md:py-2">Rokiah</a>
+                  <a href="#" class="py-1 md:py-2">Tajweed</a>
+                  <a href="#" class="py-1 md:py-2">Quran Studies</a>
+               </div>
+
+               <div class="text-footerText-0 text-base flex flex-col pb-4">
+                  <p class="text-white text-2xl font-medium pb-4">Donation</p>
+
+                  <a href="#charity" class="py-1 md:py-2">Monthly</a>
+                  <a href="#charity" class="py-1 md:py-2">Sadakah</a>
+                  <a href="#charity" class="py-1 md:py-2">Jakat</a>
+                  <a href="#charity" class="py-1 md:py-2">Qurbani</a>
+                  <a href="#mosquedonation" class="py-1 md:py-2">Masjid Fund</a>
+               </div>
+
+               <div class="text-footerText-0 text-base flex-col flex pb-4">
+                  <p class="text-white text-2xl font-medium pb-4">About Us</p>
+
+                  <a href="" class="py-1 md:py-2">Committee</a>
+                  <a href="" class="py-1 md:py-2">Imam</a>
+                  <a href="" class="py-1 md:py-2">Social Workers</a>
+                  <a href="" class="py-1 md:py-2">Others</a>
+                  <a href="" class="py-1 md:py-2">Media</a>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+      <script src="index.js"></script>
+   </body>
+</html>
